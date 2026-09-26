@@ -33,7 +33,7 @@ languages:   [Python, C++, Rust, SQL, Bash, PowerShell, Java]
 also:        [PHP, JavaScript, HTML/CSS, VBA]
 web:         [Django, Django REST Framework, OpenAPI, pytest]
 data:        [SQL Server, PostgreSQL, ETL, MES/ERP integration, Tableau, SAP BO WebI]
-regulated:   [GxP data integrity (ALCOA+), audit trails, validation, change control]
+regulated:   [data integrity, audit trails, traceability, validation, change control]
 infra:       [Linux, Docker Compose, Nginx, Gunicorn, GitHub Actions, iptables/NAT, cloud]
 hardware:    [Raspberry Pi, Arduino, ESP32, RFID/NFC, serial protocols]
 security:    [applied crypto in Rust, endpoint hardening, network/Wi-Fi auditing, CTF web, Tor]
@@ -48,11 +48,11 @@ learning:    [multi-agent orchestration, agent security, applied cryptography]
 ### `$ cat enterprise.md`
 
 ```
-regulated data management · medtech (GxP)
-  data integrity by design (ALCOA+), audit trails and end-to-end
-  traceability from source system to report; validation-minded delivery:
-  documented requirements, test evidence, controlled change, environments
-  kept strictly separate
+regulated data management · medtech
+  data integrity by design, audit trails and end-to-end traceability from
+  source system to report; validation-minded delivery: documented
+  requirements, test evidence, controlled change, environments kept
+  strictly separate
 
 enterprise data stack
   SQL Server and PostgreSQL; ETL across MES / ERP and heterogeneous
