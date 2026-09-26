@@ -10,6 +10,8 @@
 └────────────┴───────────────────────────────────────────────────────┘
 ```
 
+`// mente algoritmica` — security and privacy by design, enforcement over good intentions, and code that has to prove it works.
+
 I build software end to end: backend services and APIs, desktop tools,
 automation, and things that run on hardware, from requirements analysis to
 deployment. My day job is IT consulting and data management in medtech, where
@@ -26,16 +28,18 @@ and I build the tooling itself.
 ### `$ cat profile.yaml`
 
 ```yaml
-building:   [backend services, REST APIs, desktop tools, automation, MCP servers]
-languages:  [Python, C++, Rust, SQL, Bash, PowerShell, Java]
-also:       [PHP, JavaScript, HTML/CSS, VBA]
-web:        [Django, Django REST Framework, OpenAPI, pytest]
-data:       [SQL Server, PostgreSQL, ETL, MES/ERP integration, Tableau, SAP BO WebI]
-infra:      [Linux, Docker Compose, Nginx, Gunicorn, iptables/NAT, cloud]
-hardware:   [Raspberry Pi, Arduino, ESP32, RFID/NFC, serial protocols]
-agentic:    [Claude Code, OpenCode, MCP, subagents, hooks, skills]
-local_llm:  [Ollama, LM Studio, Qwen, DeepSeek]
-learning:   [multi-agent orchestration, agent security, applied cryptography]
+building:    [backend services, REST APIs, desktop tools, automation, MCP servers]
+languages:   [Python, C++, Rust, SQL, Bash, PowerShell, Java]
+also:        [PHP, JavaScript, HTML/CSS, VBA]
+web:         [Django, Django REST Framework, OpenAPI, pytest]
+data:        [SQL Server, PostgreSQL, ETL, MES/ERP integration, Tableau, SAP BO WebI]
+infra:       [Linux, Docker Compose, Nginx, Gunicorn, GitHub Actions, iptables/NAT, cloud]
+hardware:    [Raspberry Pi, Arduino, ESP32, RFID/NFC, serial protocols]
+security:    [applied crypto in Rust, endpoint hardening, network/Wi-Fi auditing, CTF web, Tor]
+agentic:     [Claude Code, OpenCode, MCP, subagents, hooks, skills]
+local_llm:   [Ollama, LM Studio, Qwen, DeepSeek]
+principles:  [security & privacy by design, enforcement over prose, local-first when data is sensitive]
+learning:    [multi-agent orchestration, agent security, applied cryptography]
 ```
 
 ---
@@ -69,6 +73,10 @@ work/
 │   │   (PQXDH, SPQR, Double Ratchet), post-quantum key exchange
 │   ├── hardening public endpoints: rate limiting, CAPTCHA, honeypots,
 │   │   disposable-domain filtering, brute-force protection on auth
+│   ├── offensive practice: CTF web challenges, recon and enumeration
+│   │   (ffuf, nuclei), SQL injection testing (sqlmap), findings written
+│   │   up with prioritised remediation
+│   ├── anonymity: Tor transport and onion services, threat model first
 │   ├── secrets outside the codebase, settings split per environment
 │   ├── wireless and network auditing
 │   └── trust boundaries and permissions in agentic systems
@@ -93,6 +101,19 @@ Most of my work is not public. Client code in regulated environments is not
 mine to publish, and I keep unaudited cryptographic implementations private on
 principle: a Signal-protocol implementation nobody has reviewed is a study
 exercise, not something to hand people as if it were safe.
+
+---
+
+### `$ cat now.md`
+
+```
+▸ privacy-preserving edge monitoring on Raspberry Pi: on-device computer
+  vision, event alerts and calls over Telegram, inference kept local
+▸ a domain-driven docs-and-architecture project: glossary, ADRs and
+  CI-checked documentation laid down before the code
+▸ going deeper on multi-agent orchestration and the security of agents
+  that hold real tool access
+```
 
 ---
 
@@ -154,4 +175,5 @@ are a real attack surface.
 
 `email   ` ▸ [highmarck@member.fsf.org](mailto:highmarck@member.fsf.org)  
 `github  ` ▸ [github.com/HighMarck17](https://github.com/HighMarck17)  
-`software` ▸ Free Software Foundation associate member
+`software` ▸ Free Software Foundation associate member  
+`open to ` ▸ consulting and collaboration — backend · data · security
