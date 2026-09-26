@@ -33,6 +33,7 @@ languages:   [Python, C++, Rust, SQL, Bash, PowerShell, Java]
 also:        [PHP, JavaScript, HTML/CSS, VBA]
 web:         [Django, Django REST Framework, OpenAPI, pytest]
 data:        [SQL Server, PostgreSQL, ETL, MES/ERP integration, Tableau, SAP BO WebI]
+regulated:   [GxP data integrity (ALCOA+), audit trails, validation, change control]
 infra:       [Linux, Docker Compose, Nginx, Gunicorn, GitHub Actions, iptables/NAT, cloud]
 hardware:    [Raspberry Pi, Arduino, ESP32, RFID/NFC, serial protocols]
 security:    [applied crypto in Rust, endpoint hardening, network/Wi-Fi auditing, CTF web, Tor]
@@ -40,6 +41,34 @@ agentic:     [Claude Code, OpenCode, MCP, subagents, hooks, skills]
 local_llm:   [Ollama, LM Studio, Qwen, DeepSeek]
 principles:  [security & privacy by design, enforcement over prose, local-first when data is sensitive]
 learning:    [multi-agent orchestration, agent security, applied cryptography]
+```
+
+---
+
+### `$ cat enterprise.md`
+
+```
+regulated data management · medtech (GxP)
+  data integrity by design (ALCOA+), audit trails and end-to-end
+  traceability from source system to report; validation-minded delivery:
+  documented requirements, test evidence, controlled change, environments
+  kept strictly separate
+
+enterprise data stack
+  SQL Server and PostgreSQL; ETL across MES / ERP and heterogeneous
+  sources; data quality and reconciliation rules; reporting in SAP
+  BusinessObjects Web Intelligence and Tableau for operations and management
+
+engineering governance
+  architecture decision records, domain glossaries, docs-as-code checked
+  in CI, OpenAPI contracts, code and security review, dependency and
+  vulnerability management, secrets management, least privilege,
+  threat modelling
+
+delivery and operations
+  Docker Compose, Nginx and Gunicorn behind TLS, GitHub Actions pipelines,
+  Linux hardening and monitoring, Windows automation with PowerShell and
+  scheduled tasks
 ```
 
 ---
@@ -60,7 +89,7 @@ work/
 │   └── GUI automation and scheduled desktop tasks
 ├── data/
 │   ├── integration across heterogeneous systems (MES / ERP)
-│   ├── cleansing, validation, traceability, ETL
+│   ├── data quality, reconciliation, validation and traceability, ETL
 │   └── reporting and dashboards for decision support
 ├── hardware/
 │   ├── C++ on Arduino and ESP32, low-level GPIO on Raspberry Pi
@@ -86,16 +115,6 @@ work/
     └── routing, iptables, NAT, Ethernet bridging and connection sharing
         across Linux and Windows hosts
 ```
-
----
-
-### `$ ls public/`
-
-| repo | what it does | stack |
-|:--|:--|:--|
-| [keepass-kdbx-recover](https://github.com/HighMarck17/keepass-kdbx-recover) | Recover your own KeePass master password from what you remember. AES-KDF and Argon2 aware, CLI and Tkinter GUI. | Python |
-| [animal-shelter-webapp](https://github.com/HighMarck17/animal-shelter-webapp) | Neutral Django template for an animal shelter: adoptable animals, contact form, FAQ, REST API. Ships with Docker and Nginx. | Python · Django |
-| [rpi-net-bridge](https://github.com/HighMarck17/rpi-net-bridge) | Share a host's internet connection with any Raspberry Pi over Ethernet. bash/iptables on Linux, PowerShell/WinNAT on Windows. | Bash · PowerShell |
 
 Most of my work is not public. Client code in regulated environments is not
 mine to publish, and I keep unaudited cryptographic implementations private on
